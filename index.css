@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  /* background-color: #101f31; */
+  background: #150b18;
+  color: #e5cbf0;
+  font-family: sans-serif;
+  /* color-primary: #8caed4;
+  color-secondary: #46c6dd */
+}
+/* ul {
+  border: 2px solid #ccc;
+}
+header,
+nav,
+div {
+  border: 1px solid #ff66c4;
+} */
+
+header {
+  display: flex;
+  margin-top: 1em;
+}
+.banner {
+  display: flex;
+  justify-content: flex-start;
+}
+.banner img {
+  width: 25%;
+  border-radius: 50%;
+  margin-left: 1.5em;
+  color: #fff;
+  /* border: 2px solid #ff66c4; */
+  /* box-shadow: 0px 0px 10px #ff66c4; */
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.nav-list li {
+  margin-right: 1.5em;
+  letter-spacing: 0.3em;
+  font-size: 0.9em;
+  padding: 0.5em;
+  /* text-shadow: 0px 0px 20px #fff; */
+  transition: 0.5s;
+}
+.nav-list span {
+  color: #ff66c4;
+}
+.nav-list li:hover {
+  transition: 0.5s;
+  color: #ff66c4;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .banner {
+    justify-content: center;
+  }
+  .nav-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: sticky;
+  }
+}
+header {
+  position: sticky;
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  font-size: 3rem;
+}
+
+.intro h1 {
+  line-height: 0.8;
+}
+.heading {
+  font-family: "Lobster", cursive;
+}
+.subtitle {
+  color: rgb(229, 203, 240, 0.4);
+}
+.subtitle span {
+  color: #e5cbf0;
+  font-family: "Lobster", cursive;
+}
+.subtitle span::before {
+  content: "< ";
+}
+.subtitle span::after {
+  content: " />";
+}
+.intro img {
+  height: 10%;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    line-height: 1.5;
+  }
+}
