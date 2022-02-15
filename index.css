@@ -68,8 +68,14 @@ nav {
   .banner {
     justify-content: center;
   }
+  .banner img {
+    margin-left: 0;
+  }
   .nav-list {
     justify-content: center;
+  }
+  .nav-list li {
+    margin-right: 0em;
   }
 }
 
